@@ -1,5 +1,7 @@
 import java.util.*;
                             /*    https://www.hackerrank.com/challenges/simple-array-sum        */
+                            /*    https://www.hackerrank.com/challenges/a-very-big-sum         */
+                            /*This is for both Simple Array and Big,only diffrence is int/long*/
 public class Solution {
 
 	public static void main(String[] args) {
