@@ -1,8 +1,5 @@
 /*                     https://www.hackerrank.com/challenges/diagonal-difference                    */    
-
-
 import java.util.*;
-
 class diffrence {
 	public static int getDiffrence(String[] input,int size) {
 		int rtl = 0;
@@ -21,15 +18,10 @@ class diffrence {
 			count--;
 		}
 		int result = ltr - rtl;
-		
 		return Math.abs(result);
 	}
 }
-
-
 public class Solution {
-	
-
 	public static void main(String[] args) {
 		int amount = 0;
 		Scanner scan = new Scanner(System.in);
@@ -41,5 +33,4 @@ public class Solution {
 		}
 		System.out.println(diffrence.getDiffrence(input, amount));
 	}
-
 }
