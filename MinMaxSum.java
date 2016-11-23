@@ -17,7 +17,7 @@ class find {
 		return minNum;
 	}
 	public static int getMin(String[] input) {
-		int minNum = 0;
+		int minNum = ;
 		int response = 0;
 		for(int i = 0; i < input.length;++i) { // cancel number
 			response = 0;
@@ -25,6 +25,9 @@ class find {
 				response += Integer.parseInt(input[j]);
 			}
 			response -= Integer.parseInt(input[i]);
+			if(i == 1) {
+				minNum = response;
+			}
 			if(minNum < response) {
 				minNum = response;
 			}
