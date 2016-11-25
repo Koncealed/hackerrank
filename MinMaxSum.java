@@ -39,7 +39,7 @@ public class Solution {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-        String test = scan.nextLine();
+                String test = scan.nextLine();
 		String[] testing = test.split(" ");
 		System.out.println(find.getMin(testing) + " " + find.getMax(testing));
 	}
