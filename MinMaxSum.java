@@ -1,34 +1,34 @@
 import java.util.*;
 
 class find {
-	public static int getMax(String[] input) {
-		int minNum = 0;
-		int response = 0;
+	public static long getMax(String[] input) {
+		long minNum = 0;
+		long response = 0;
 		for(int i = 0; i < input.length;++i) { // cancel number
 			response = 0;
 			for(int j = 0; j < input.length;++j) { // add numbers together
 				response += Integer.parseInt(input[j]);
 			}
 			response -= Integer.parseInt(input[i]);
-			if(minNum > response) {
+			if(minNum < response) {
 				minNum = response;
 			}
 		}
 		return minNum;
 	}
-	public static int getMin(String[] input) {
-		int minNum = ;
-		int response = 0;
+	public static long getMin(String[] input) {
+		long response = 0;
+		long minNum = 0;
 		for(int i = 0; i < input.length;++i) { // cancel number
 			response = 0;
 			for(int j = 0; j < input.length;++j) { // add numbers together
 				response += Integer.parseInt(input[j]);
 			}
 			response -= Integer.parseInt(input[i]);
-			if(i == 1) {
+			if(i == 0) {
 				minNum = response;
 			}
-			if(minNum < response) {
+			if(response < minNum) {
 				minNum = response;
 			}
 		}
@@ -38,9 +38,10 @@ class find {
 public class Solution {
 
 	public static void main(String[] args) {
-		String test = "1 2 3 4 5";
+		Scanner scan = new Scanner(System.in);
+        String test = scan.nextLine();
 		String[] testing = test.split(" ");
-		find.getMin(testing);
+		System.out.println(find.getMin(testing) + " " + find.getMax(testing));
 	}
 
 }
