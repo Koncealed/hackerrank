@@ -17,8 +17,7 @@ class diffrence {
 			rtl += graph[i][count];
 			count--;
 		}
-		int result = ltr - rtl;
-		return Math.abs(result);
+		return Math.abs(ltr - rtl);
 	}
 }
 public class Solution {
