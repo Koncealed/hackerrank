@@ -7,14 +7,8 @@ class diffrence {
 		int[][] graph = new int[size][size];
 		int count = graph.length - 1;
 		for(int i = 0; i < size;++i) {
-			String[] input1 = input[i].split(" ");
-			for(int j = 0; j < size;++j) {
-				graph[i][j] = Integer.parseInt(input1[j]);
-			}
-		}
-		for(int i = 0; i < size;++i) {
-			ltr += graph[i][i];
-			rtl += graph[i][count];
+			ltr += Integer.parseInt(graph[i][i]);
+			rtl += Integer.parseInt(graph[i][count]);
 			count--;
 		}
 		return Math.abs(ltr - rtl);
